@@ -1,0 +1,535 @@
+{
+  "description": "Byte-identical files copied from the local EOT experiment; generated synchronization helpers are not part of this manifest.",
+  "files": [
+    {
+      "path": ".env.example",
+      "sha256": "e8dc4c044b118129fabf3261b440ee6e9c769a1910d494d6d9b06d107da62b34",
+      "bytes": 159
+    },
+    {
+      "path": "configs/eot_main.yaml",
+      "sha256": "0034ae6cefbbef79c8c95098f5de9c1165534b2647af031789d32770fcb565eb",
+      "bytes": 2865
+    },
+    {
+      "path": "configs/optimization/A.yaml",
+      "sha256": "4b0a69b24d6287e350e65a41d63126a5ca29dc70c4cc989172a1be40aa2fc3d2",
+      "bytes": 399
+    },
+    {
+      "path": "configs/optimization/B.yaml",
+      "sha256": "542d99f3fd222a31f1e1a4017beab6236e7c58dcd00e0612d723fe8a06101607",
+      "bytes": 400
+    },
+    {
+      "path": "configs/optimization/C.yaml",
+      "sha256": "0e8daf6a9c66c28c30d71e81791313cc5330928fc8bea70395e9a6a7729446f0",
+      "bytes": 399
+    },
+    {
+      "path": "configs/optimization/D.yaml",
+      "sha256": "ee39b608823a2b16a5e0ba1f1f1a87271b1b0b6a32d943877e006c358c7fcf6d",
+      "bytes": 399
+    },
+    {
+      "path": "configs/optimization/F1.yaml",
+      "sha256": "5fb195bcf8c0c7bc3ba446b2bd3e697a86ae9d9903c2c8e99809fe36094e9649",
+      "bytes": 432
+    },
+    {
+      "path": "configs/optimization/F2.yaml",
+      "sha256": "97b26a7c413b85ff9b2a4f9bf124ec9fe171f162f25488190234cc1c49952ae6",
+      "bytes": 432
+    },
+    {
+      "path": "DESIGN.md",
+      "sha256": "6028bbf87f7e32b8437518852f6c7012b4b74d9588ed5dfc8ffb798e38e17ae3",
+      "bytes": 4484
+    },
+    {
+      "path": "docs/EXPERIMENT_STRUCTURE.md",
+      "sha256": "4227d0e961b9743b38074eff7d66cce2a2da72b78308df6fc47fe3359bb656de",
+      "bytes": 7912
+    },
+    {
+      "path": "docs/optimization/audit_o02.py",
+      "sha256": "8d8675eca446d6104a41fa37999151dbebce644cab74619c0cf2b5095e792f00",
+      "bytes": 9876
+    },
+    {
+      "path": "docs/optimization/PROTOCOL_v1.md",
+      "sha256": "5528e1f6959ea365a513864cfe257c5d0c0c0912c9f7db5a6c623b8a9fe0baa7",
+      "bytes": 17069
+    },
+    {
+      "path": "docs/optimization/v2/audit_v01.py",
+      "sha256": "54b528a7f8df04bfd1cbcd8b1436b2eadbf61fe69ed3b9c48278cd99461118f7",
+      "bytes": 10539
+    },
+    {
+      "path": "docs/optimization/v2/PROTOCOL_v2.md",
+      "sha256": "9b85b9cad34375f7be1ffaf5bad8605c08b5a82b04fab8cb3622472f5cb5491d",
+      "bytes": 8856
+    },
+    {
+      "path": "docs/RECALL_ACCURACY_ANALYSIS.md",
+      "sha256": "753db210740399b29d480a14988eac5ec1f2261143f6bc40061c21fdad58b144",
+      "bytes": 12402
+    },
+    {
+      "path": "docs/RESULTS_ANALYSIS.md",
+      "sha256": "88e0c8cf0e6f0f93dc3bd8c13c8bd1793356abd478fc91a880b3445bef548e56",
+      "bytes": 8077
+    },
+    {
+      "path": "EXPERIMENT_PLAN.md",
+      "sha256": "daf3df6660d89fa4b7947ecc5d71de5d1a4e06ccb971b6e490ec38871954b9d6",
+      "bytes": 8536
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "787e71cf804fadf348405803874900ec4c2be14d97856665b45977a3d533d43f",
+      "bytes": 577
+    },
+    {
+      "path": "requirements-cuda.txt",
+      "sha256": "08e8c07bbf5f85d448c5db2004d45b10d32028e716e67dc6e2229a3d2fb85bd0",
+      "bytes": 430
+    },
+    {
+      "path": "scripts/analyze_recall_accuracy.py",
+      "sha256": "4a55bdf4dff77b4c513dfb5824089acc2f450677675898de23ec1437b35a2d32",
+      "bytes": 9005
+    },
+    {
+      "path": "scripts/audit_raw_data.py",
+      "sha256": "4e10b457f2f3cf1c1e515805afa05d8afc74cee2152f4b6ffce8cc19f6876a3b",
+      "bytes": 673
+    },
+    {
+      "path": "scripts/build_notebook.py",
+      "sha256": "a7ab599471d8006504080c013cd27bd7e76ed019e37bb161156b73bfe3af1be7",
+      "bytes": 552
+    },
+    {
+      "path": "scripts/build_posting_frequency_delivery.py",
+      "sha256": "9eba24d72f14cd412aa9d503e03fc0af317eb02cd62951621599f7d922384589",
+      "bytes": 19309
+    },
+    {
+      "path": "scripts/build_time_stats.py",
+      "sha256": "8750059b72b863c57e6fcf9c5c1d7ae0d93dea5d729bda18e128f659074b3630",
+      "bytes": 645
+    },
+    {
+      "path": "scripts/create_splits.py",
+      "sha256": "e7e719103e1fd390b3287d24baf126fe2ac65262fcde553bfbd8f61b9a0111f4",
+      "bytes": 594
+    },
+    {
+      "path": "scripts/evaluate.py",
+      "sha256": "cae23bd332a5de9a4ff2bb5521822dc9f78d07b2ec12ce8fe794462550c5efec",
+      "bytes": 735
+    },
+    {
+      "path": "scripts/evaluate_posting_frequency.py",
+      "sha256": "a978dcd2492f60860cf7d535c963285a16d5903905655db44743a6e6b3d753ef",
+      "bytes": 21246
+    },
+    {
+      "path": "scripts/evaluate_posting_frequency_robustness.py",
+      "sha256": "8b2382c6858d6af0cbd528016be5854b7504bd45236ffc7763ce68210b8c9033",
+      "bytes": 19577
+    },
+    {
+      "path": "scripts/extract_embeddings.py",
+      "sha256": "d322755a5f9d6d8ff704894ea604ac2cfed98b7b9c3325ca8bd2d6ee1a044626",
+      "bytes": 722
+    },
+    {
+      "path": "scripts/optimization/conditional.py",
+      "sha256": "3e39177719c1bffd23efb692d1231ecd32514c6d4a0ebf6dfde8b1f714aa1652",
+      "bytes": 572
+    },
+    {
+      "path": "scripts/optimization/evaluate.py",
+      "sha256": "6f6f25164663ddfd4901b12d1a688a21d5b478496e6fcf8078965e7aa9e3c491",
+      "bytes": 5906
+    },
+    {
+      "path": "scripts/optimization/final.py",
+      "sha256": "dbb9da7a2aa0305698a3e37aab9c52aa36ebaa4809366d90183ef13c295399e9",
+      "bytes": 5601
+    },
+    {
+      "path": "scripts/optimization/finish_conditional.py",
+      "sha256": "23dac5880801424a96a2bd061a59f27dab81d2678b5619131d3a9add0f7d382a",
+      "bytes": 8088
+    },
+    {
+      "path": "scripts/optimization/finish_final.py",
+      "sha256": "51b54c9faaeded3515f4b813cee2ead0348769290e33df6ba75d168b9395581e",
+      "bytes": 15002
+    },
+    {
+      "path": "scripts/optimization/finish_screening.py",
+      "sha256": "80d424289d5780789b86b9fbd65c0954c89a2946b7f743b1323e4bf683566191",
+      "bytes": 11934
+    },
+    {
+      "path": "scripts/optimization/finish_stability.py",
+      "sha256": "43433c4355d86ad55c8a1bb68f898bd3e23a6734850017269b915b66cbaa0226",
+      "bytes": 8411
+    },
+    {
+      "path": "scripts/optimization/screening.py",
+      "sha256": "fff4b1635451ab5501f271b627e093ec781a3d0023d4987173a53f944b0368f7",
+      "bytes": 3157
+    },
+    {
+      "path": "scripts/optimization/smoke.py",
+      "sha256": "6c0cceb6b0c3f13b08ae00de7a72ed3483a7eb628b740e3ad20773df4ab98428",
+      "bytes": 2415
+    },
+    {
+      "path": "scripts/optimization/stability.py",
+      "sha256": "4e25821c110be8e3189fa9e179bcdb2d31ff48c43ac94a2546135261794481a4",
+      "bytes": 887
+    },
+    {
+      "path": "scripts/optimization/train.py",
+      "sha256": "bf9f1e473f6ae3549f4dec464c4c50dbb65c108a1c0f187f2c83275c45e22c3e",
+      "bytes": 1686
+    },
+    {
+      "path": "scripts/preprocess_data.py",
+      "sha256": "04f677b36c0d91da689fe50828aca54af1af46acc713466442bf184a9f190f17",
+      "bytes": 879
+    },
+    {
+      "path": "scripts/probe_ode_states.py",
+      "sha256": "14dac523e78e919b3b4e71da97cb0f58086211379cb8c89e219135e1ebf128eb",
+      "bytes": 20854
+    },
+    {
+      "path": "scripts/recompute_metrics.py",
+      "sha256": "0c30b1f5eb8d3588903b03d29979f196eaaf3fd942ee717b2029e92c623df48a",
+      "bytes": 849
+    },
+    {
+      "path": "scripts/report_environment.py",
+      "sha256": "d13f599c1b2530c6077e824792fb31696b8ae319dd54dbfec609b1a04dec0d81",
+      "bytes": 638
+    },
+    {
+      "path": "scripts/smoke_train.py",
+      "sha256": "09333d08007aafbf2c8042c3f743693caf2e457eaadf9596f5dac285b0cbe6c2",
+      "bytes": 731
+    },
+    {
+      "path": "scripts/summarize_training.py",
+      "sha256": "cdaa1065c0a58eabad17820a28f57fe840eceb62e82e254f2163a0c5e0f254ec",
+      "bytes": 4597
+    },
+    {
+      "path": "scripts/train.py",
+      "sha256": "833d586fb5ac825ebf3239138e30166294eb085119e60caf6ad0ac5676104680",
+      "bytes": 1179
+    },
+    {
+      "path": "scripts/validate_evaluation.py",
+      "sha256": "c75ec9427e1648cbf4314fd8bdfa1a305b30161a6d787f831aef242d6c99534b",
+      "bytes": 704
+    },
+    {
+      "path": "scripts/visualize_ode.py",
+      "sha256": "da733ab17cb35d4eb1b4248d795b866a672c38198c325b033d25e2c8a7526667",
+      "bytes": 1062
+    },
+    {
+      "path": "scripts/visualize_results.py",
+      "sha256": "050f9074ac8604981bcdfecc46d80acff470e46604fac9ee99d109d1578c05f4",
+      "bytes": 910
+    },
+    {
+      "path": "src/eot/__init__.py",
+      "sha256": "7a0b96e4928a48f9f8fdb51a9e654404a0901ea32bb46ded0a23058456d43bb5",
+      "bytes": 170
+    },
+    {
+      "path": "src/eot/audit.py",
+      "sha256": "1c011b6148d8e6495808ea52552c666733b37080380fd43af4bbee5f9734c26d",
+      "bytes": 7888
+    },
+    {
+      "path": "src/eot/config.py",
+      "sha256": "c326cb377ebde0f9c9a56e914656d76b2c73cc63708f0cd2cb8cd51a18d9041e",
+      "bytes": 2704
+    },
+    {
+      "path": "src/eot/dataset.py",
+      "sha256": "e0f671c03c26234d4ecbf78dfd4d659e591d6e28a5439e83956d3bdb12924c0a",
+      "bytes": 4364
+    },
+    {
+      "path": "src/eot/embeddings.py",
+      "sha256": "8f91fa3a84d87842d29537afa1d2302f5f9ee624218028ed76bf192921f33802",
+      "bytes": 8975
+    },
+    {
+      "path": "src/eot/evaluation.py",
+      "sha256": "899fd384c65e6d43639802d9990f80688140bc195e7121e6f1c22738b76dab3a",
+      "bytes": 33169
+    },
+    {
+      "path": "src/eot/losses.py",
+      "sha256": "62ae5e9003a04ff12fb64941d8de8aaf2d88cb150500ee77e02d1266e1acc91a",
+      "bytes": 2518
+    },
+    {
+      "path": "src/eot/metrics.py",
+      "sha256": "dec3a403d10056588ec87fac6e530199fa1c00759dda67b42e3c08c5440184e7",
+      "bytes": 12753
+    },
+    {
+      "path": "src/eot/model.py",
+      "sha256": "e92e73fc9e54f777077bbb64b8420c4043fda0134e5e7c1495c0d08a218cdfee",
+      "bytes": 11255
+    },
+    {
+      "path": "src/eot/notebook_document.py",
+      "sha256": "9474c7b2ebcd1ccaca1f10f16f22db771faca9a2aa53a1439c223c9269c3294b",
+      "bytes": 22076
+    },
+    {
+      "path": "src/eot/notebook_support.py",
+      "sha256": "1177bbfbc4fa305564f82bd2f4677734ff445aa299d4493166fd65ddc7520df5",
+      "bytes": 8114
+    },
+    {
+      "path": "src/eot/ode_analysis.py",
+      "sha256": "7c090165be597590f3c12f3e43b5f0b5960bda6687e1e9f40c287b17362e17f3",
+      "bytes": 28590
+    },
+    {
+      "path": "src/eot/optimization/__init__.py",
+      "sha256": "4ad9b369ff2a352eeb12e735e54f2d00a01d81ae645b4813b564575aa1c56db6",
+      "bytes": 327
+    },
+    {
+      "path": "src/eot/optimization/comparison.py",
+      "sha256": "2cf42c565beaf5fc763061b200e8b1fb71ab9b8fe615f0734dbb2a8259e7b4d1",
+      "bytes": 17390
+    },
+    {
+      "path": "src/eot/optimization/conditional.py",
+      "sha256": "5fd50991e839ffd0e015ee6f4df61976c2b74eb8149fcfc23d3a7bc409f7e09e",
+      "bytes": 11468
+    },
+    {
+      "path": "src/eot/optimization/conditional_config.py",
+      "sha256": "16757b2d38578ea472b820eb10885aecb9dd6bd9fb9e1d8f026f36037bd1e2f1",
+      "bytes": 6289
+    },
+    {
+      "path": "src/eot/optimization/conditional_training.py",
+      "sha256": "a618b03231220427a4eaabafad6a4cb228d24658f1723079b042f0bf998ef1c8",
+      "bytes": 2305
+    },
+    {
+      "path": "src/eot/optimization/config.py",
+      "sha256": "6ce6391734b30552a99d0bda869891d1d9d5b7adabb8817bd2c7db5729f4e2f7",
+      "bytes": 12548
+    },
+    {
+      "path": "src/eot/optimization/data.py",
+      "sha256": "2e4cc05229f6ac41cd79e2f55693c24749fd6e0f6262c391ca40fd22837851e5",
+      "bytes": 10966
+    },
+    {
+      "path": "src/eot/optimization/decisions.py",
+      "sha256": "21f5934da0ed97a08a7db2d0de7f2bb49b3159fad02c4e09da20344a1737a41c",
+      "bytes": 13541
+    },
+    {
+      "path": "src/eot/optimization/delivery.py",
+      "sha256": "c6f5956b78a455b96e4798ee033d5f3ed47892038415e53a78ca720f7f0bd813",
+      "bytes": 25515
+    },
+    {
+      "path": "src/eot/optimization/evaluation.py",
+      "sha256": "5c0ba5794333ed24cfb3eee8aae42ba06d41d9727c907f7933f4bcdbbe0b2c53",
+      "bytes": 30723
+    },
+    {
+      "path": "src/eot/optimization/final.py",
+      "sha256": "2619e6cf3710ff706328471d20917052149c25bf2130d77839d1fe3a4d18dc03",
+      "bytes": 8307
+    },
+    {
+      "path": "src/eot/optimization/final_training.py",
+      "sha256": "ef459f61842bd8736dced3eb4695597a59717dfae067f51511ec7e03302d8b94",
+      "bytes": 47137
+    },
+    {
+      "path": "src/eot/optimization/focal.py",
+      "sha256": "00dd442855761bbdddda6714ab775ff2bd63104cec7a7ba23798a8388ddf0920",
+      "bytes": 2728
+    },
+    {
+      "path": "src/eot/optimization/losses.py",
+      "sha256": "fd90d646decb790af6890a4404584dd9c8a0b1da2a08a15579c82c0b1a6431a7",
+      "bytes": 3101
+    },
+    {
+      "path": "src/eot/optimization/runs.py",
+      "sha256": "de6c4a2fad20557b25c12bd6e9b2f4de87471ebcd740270d659cdc90f8539692",
+      "bytes": 4179
+    },
+    {
+      "path": "src/eot/optimization/screening.py",
+      "sha256": "fe2d3a3ab736e4038cb8300e7de55a3eeb5bd6857a528454b2615706a356aa20",
+      "bytes": 28387
+    },
+    {
+      "path": "src/eot/optimization/smoke.py",
+      "sha256": "4e644bfe4b28e4fe5e4be2bceed31f8eeeab21d564ee329e38d76c356cbc0af0",
+      "bytes": 28762
+    },
+    {
+      "path": "src/eot/optimization/splits.py",
+      "sha256": "79dfb4b86e228db365756f835c8f7c337f49e20fa593e19e1f5de7657d8f6dc5",
+      "bytes": 4662
+    },
+    {
+      "path": "src/eot/optimization/stability.py",
+      "sha256": "4771c89100089825bd93127a8cf88ca415e0e013610aa7f56419b663f9f81b41",
+      "bytes": 15109
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/__init__.py",
+      "sha256": "e441ab8e547ff17a0bd39cef1ccc36bcf3d4334d2e6868d09feb38147970959a",
+      "bytes": 76
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/assessment.py",
+      "sha256": "68ac9988fb5f3034e920c74b15c8272d1a035beac71e657c82de76fa344e2d5b",
+      "bytes": 18071
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/calibration.py",
+      "sha256": "d1dd3d9b352f96d76e90cf7554bcf6ad3c03ef4620a9c91d90a73ca9dc06dbb3",
+      "bytes": 19188
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/selection.py",
+      "sha256": "e94fcdd09a9beceae7ce7a72ea053d782234d4e06c1581a96ea211deea9d769e",
+      "bytes": 4683
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/sources.py",
+      "sha256": "c0c09584770e3f576d026441c358e97dea1556629feb17a414cab8be8b24960b",
+      "bytes": 10419
+    },
+    {
+      "path": "src/eot/optimization/threshold_v2/validation.py",
+      "sha256": "26570ef01e2ff2a98a70e0b4f279309a638758a10b4abcb2e7590aafb853c7dd",
+      "bytes": 13220
+    },
+    {
+      "path": "src/eot/optimization/training.py",
+      "sha256": "3aa136f97c998f2343d9091cb26f1dc86d0c641207d503cad4ea40439e564bd0",
+      "bytes": 19524
+    },
+    {
+      "path": "src/eot/preprocessing.py",
+      "sha256": "0c3b00de055119dc9056166d06d188ef1e6bdd7928460c4124268d0d28d42d60",
+      "bytes": 8559
+    },
+    {
+      "path": "src/eot/raw_data.py",
+      "sha256": "b43cdeb78d566d6c3cac5f2a5586c0db89ba98d3ca27359acf46a24c7b2cb453",
+      "bytes": 5578
+    },
+    {
+      "path": "src/eot/reporting.py",
+      "sha256": "a7a920939395b98f64ed0a281f4a7ec65073cae246c7d2ae707bff625956a8ae",
+      "bytes": 11888
+    },
+    {
+      "path": "src/eot/reproducibility.py",
+      "sha256": "a8134ccf72b0c35fe77d3a1bba9d88a458541884ede597e01b66de4ab67c39b7",
+      "bytes": 3517
+    },
+    {
+      "path": "src/eot/splitting.py",
+      "sha256": "dea02df6402ca1e319d8ee8cc94889221c005a28362e8c42e3ec54ca40f1f5dd",
+      "bytes": 4987
+    },
+    {
+      "path": "src/eot/time_features.py",
+      "sha256": "10c8a4bf1601eaf5cdb368d16535f2899c52d26e9f3e028da6d90ce46c75f1fc",
+      "bytes": 4758
+    },
+    {
+      "path": "src/eot/training.py",
+      "sha256": "c3fe565ca3c5e9052e0da13f2aadda61a3d0549011ccd1bfc8cdc19e128d3f4d",
+      "bytes": 17606
+    },
+    {
+      "path": "src/eot/visualization.py",
+      "sha256": "d2f7c28baba00a5c90e84ddd440096a25c88adf2076fdc5d907af2a6769ef6ec",
+      "bytes": 28264
+    },
+    {
+      "path": "tests/test_evaluation.py",
+      "sha256": "085372059649de24d3abd4579efef4d9d2eeba7ebccf74d6f777c55b4e99a712",
+      "bytes": 1331
+    },
+    {
+      "path": "tests/test_losses.py",
+      "sha256": "af62b53db75eff3bf5b1087f376220fcd14bde4d8c9abaedaf256263a07fb508",
+      "bytes": 905
+    },
+    {
+      "path": "tests/test_metrics.py",
+      "sha256": "cd3c992ecd6f1776a2997bcffedc2ce8709a831392a8e037b08488989fbf64ea",
+      "bytes": 4090
+    },
+    {
+      "path": "tests/test_model.py",
+      "sha256": "b48b55c2a8429774712786ec67329efe43e8d27bdf986c8e0b22666fb3435e6a",
+      "bytes": 2416
+    },
+    {
+      "path": "tests/test_notebook.py",
+      "sha256": "6aa0b4b7a5cf7f43edc95839c41c61bd28544a5694764f9b5aac531c4c9382a9",
+      "bytes": 2870
+    },
+    {
+      "path": "tests/test_posting_frequency.py",
+      "sha256": "86b2b04750d51ac534d0a289e19d702e2295e9a55c477906976023b97f26c6bc",
+      "bytes": 3158
+    },
+    {
+      "path": "tests/test_posting_frequency_robustness.py",
+      "sha256": "539b8f427eb9cb77a64890c0eccb73ada47211b223af888cbd8d6aa9ecde7405",
+      "bytes": 2625
+    },
+    {
+      "path": "tests/test_raw_data.py",
+      "sha256": "58cce113cea06aee02d018b5406df634df669a8adae9da348db8dc067a4d8364",
+      "bytes": 1027
+    },
+    {
+      "path": "tests/test_reporting.py",
+      "sha256": "94608821c26d0323b79460ab460f21e1f8fa88e0bd6effacd6f1d9dd94d5d7f6",
+      "bytes": 1969
+    },
+    {
+      "path": "tests/test_time_features.py",
+      "sha256": "038bdb052011e4791bc6a0e3b7e25197a5916a7120a29d30ccf8f3bdf373204e",
+      "bytes": 898
+    }
+  ]
+}

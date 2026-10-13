@@ -1,0 +1,26 @@
+# Restricted datasets, user identifiers, predictions and trained weights stay local.
+/data/
+/outputs/
+/private-sync/
+/models/
+/notebooks/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+*.pt
+*.pth
+*.safetensors
+*.npy
+*.npz
+*.parquet
+*.zip
+*.log

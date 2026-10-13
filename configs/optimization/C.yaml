@@ -1,0 +1,15 @@
+schema_version: 1
+protocol_id: eot_threshold_loss_v1
+protocol_lock_sha256: 53d8fe1717f11731e7e6a4f6b84653a5e6a151c6a46ea977f6b9c88726e119ca
+candidate_id: C
+loss:
+  final_loss: weighted_bce
+  alpha: 0.5
+  prefix_weight: 0.5
+  gamma: 0.0
+thresholds:
+  grid: {min: 0.0, max: 1.0, step: 0.005, count: 201}
+  consecutive: 2
+paths:
+  output_root: outputs/optimization/v1
+  data_root: data/optimization/v1

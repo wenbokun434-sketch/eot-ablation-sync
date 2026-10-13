@@ -1,0 +1,27 @@
+{
+  "generated_at_utc": "2026-09-04T09:24:59.890961+00:00",
+  "python": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "packages": {
+    "PyYAML": "6.0.3",
+    "numpy": "2.2.6",
+    "pandas": "2.2.3",
+    "pyarrow": "24.0.0",
+    "scikit-learn": "1.6.1",
+    "torch": "2.11.0+cu130",
+    "torchdiffeq": "0.2.5",
+    "transformers": "5.12.1"
+  },
+  "cuda": {
+    "available": true,
+    "cudnn_version": 91900,
+    "devices": [
+      {
+        "index": 0,
+        "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+        "total_memory_bytes": 8585216000
+      }
+    ],
+    "torch_cuda_version": "13.0"
+  },
+  "description": "Historical main-experiment environment, not a claim about the current machine. Local paths and machine identifiers omitted."
+}

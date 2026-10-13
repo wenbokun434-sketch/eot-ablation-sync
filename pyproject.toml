@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "eot-experiment"
+version = "0.1.0"
+description = "Emotion-ODE-Transformer experiment for user-level early depression detection"
+requires-python = ">=3.10"
+dependencies = [
+  "matplotlib",
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "PyYAML",
+  "scikit-learn",
+  "seaborn",
+  "torch",
+  "torchdiffeq",
+  "transformers",
+]
+
+[project.optional-dependencies]
+notebook = ["nbformat>=5", "nbclient>=0.10", "ipykernel>=6", "nbconvert>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

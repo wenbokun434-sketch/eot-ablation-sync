@@ -1,0 +1,158 @@
+experiment:
+  name: emotion_ode_transformer
+  short_name: eot
+  task: erisk_2025_task2_binary_depression
+
+paths:
+  project_root: ..
+  raw_data_root: "${ERISK_TASK2_ROOT}"
+  labels_file: "shuffled_ground_truth_labels.txt"
+  conversations_dir: "all_combined"
+  processed_dir: "data/processed"
+  splits_dir: "data/splits"
+  time_stats_dir: "data/time_stats"
+  embeddings_dir: "data/embeddings"
+  outputs_dir: "outputs"
+
+data:
+  target_field: target
+  target_value: true
+  sequence_selection: earliest
+  max_posts: 256
+  max_tokens: 256
+  padding_side: right
+  remove_markers:
+    - "[removed]"
+    - "[deleted]"
+  normalize_urls: true
+  normalize_user_mentions: true
+
+encoder:
+  model_name: j-hartmann/emotion-english-distilroberta-base
+  revision: 0e1cd914e3d46199ed785853e12b57304e04178b
+  pooling: first_token
+  freeze: true
+  embedding_dtype: float16
+  local_files_only: true
+  batch_size: 64
+
+projection:
+  input_dim: 768
+  hidden_dim: 256
+  output_dim: 128
+  activation: gelu
+  dropout: 0.2
+  layer_norm: true
+
+time:
+  unit: days
+  transform: log1p
+  clipping_quantile: 0.99
+  scaling: divide_by_train_quantile
+  output_min: 0.0
+  output_max: 1.0
+
+ode:
+  state_dim: 128
+  hidden_dim: 256
+  solver: rk4
+  integration_start: 0.0
+  integration_end: 1.0
+  step_size: 0.25
+  activation: tanh
+  dropout: 0.0
+  learned_initial_state: true
+
+fusion:
+  type: learned_gate
+  dim: 128
+  layer_norm: true
+
+transformer:
+  d_model: 128
+  n_heads: 4
+  num_layers: 2
+  dim_feedforward: 512
+  activation: gelu
+  dropout: 0.2
+  norm_first: true
+  causal: true
+  learned_position_embedding: true
+
+pooling:
+  type: prefix_attention
+  hidden_dim: 128
+  checkpoints:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 16
+    - 32
+    - 64
+    - 128
+    - 256
+
+classifier:
+  input_dim: 128
+  hidden_dim: 64
+  activation: gelu
+  dropout: 0.2
+  output_dim: 1
+
+loss:
+  type: weighted_bce_with_logits
+  positive_weight: from_training_fold
+  final_weight: 1.0
+  prefix_weight: 0.5
+  user_balanced_prefix_average: true
+
+training:
+  optimizer: adamw
+  learning_rate: 0.0008
+  weight_decay: 0.01
+  batch_users: 128
+  hardware_profile: cuda_8gb
+  mixed_precision: false
+  max_epochs: 50
+  early_stopping_metric: pr_auc
+  early_stopping_patience: 8
+  gradient_clip_norm: 1.0
+  seeds:
+    - 42
+    - 43
+    - 44
+
+cross_validation:
+  strategy: stratified_user_kfold
+  n_splits: 5
+  shuffle: true
+  fold_seed: 42
+  validation_fraction_of_outer_train: 0.125
+
+decision:
+  threshold_source: validation
+  threshold_objective: f_latency
+  consecutive_positive_predictions: 2
+
+metrics:
+  classification:
+    - pr_auc
+    - roc_auc
+    - precision
+    - recall
+    - f1
+    - macro_f1
+    - balanced_accuracy
+    - mcc
+    - brier_score
+  early_detection:
+    - erde_5
+    - erde_50
+    - median_latency
+    - speed
+    - f_latency
+  confidence_interval:
+    method: user_bootstrap
+    level: 0.95
+    iterations: 2000
